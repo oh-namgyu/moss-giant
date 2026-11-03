@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moss Giant</title>
+<meta name="description" content="A 10-second 2D animation painted, animated and scored entirely by code.">
+<style>
+:root{--ground:#0d0c10;--paper:#f3ead6;--dim:rgba(243,234,214,.66);--line:rgba(243,234,214,.36);--amber:#f2c879;--serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color-scheme:dark}
+html,body{height:100%}
+body{margin:0;background:var(--ground);color:var(--paper);font-family:var(--serif);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+[hidden]{display:none!important}
+#stage{height:100%;display:flex;align-items:center;justify-content:center}
+#frame{position:relative;width:100%;max-width:calc(100vh*1.7778);aspect-ratio:16/9;background:#000}
+#film{position:absolute;inset:0;width:100%;height:100%;display:block}
+#veil{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:16px;text-align:center;background:radial-gradient(ellipse at center,rgba(13,12,16,.28),rgba(13,12,16,.72))}
+h1{margin:0;font-weight:400;font-size:clamp(24px,5vw,52px);letter-spacing:.08em;text-wrap:balance}
+#go{font:inherit;color:var(--paper);background:rgba(13,12,16,.5);border:1px solid var(--line);border-radius:999px;padding:10px 26px;min-height:44px;font-size:clamp(14px,1.6vw,17px);letter-spacing:.05em;cursor:pointer}
+#go:hover{border-color:var(--amber);background:rgba(242,200,121,.16)}
+#go:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+#note{margin:0;max-width:52ch;color:var(--dim);font-size:clamp(12px,1.3vw,15px);line-height:1.5}
+</style>
+</head>
+<body>
+<div id="stage"><div id="frame"><canvas id="film" role="img" aria-label="A moss-covered giant robot wakes in a forest at sunrise and flies into the sky"></canvas><div id="veil"><h1>Moss Giant</h1><button id="go" type="button" hidden>Watch with sound</button><p id="note">Painting the forest. This takes a few seconds.</p></div></div></div>
+<script>
+"use strict";
+/*__JS__*/
+</script>
+</body>
+</html>

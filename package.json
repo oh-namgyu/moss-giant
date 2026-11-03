@@ -1,0 +1,23 @@
+{
+  "name": "moss-giant",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A 10-second 2D animation painted, animated and scored entirely by code. No image, video or audio models or files.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "render": "npm run build && node tools/render.mjs",
+    "sheet": "npm run build && node tools/sheet.mjs",
+    "still": "npm run build && node tools/still.mjs",
+    "lint": "prettier --check \"src/**/*.js\" \"tools/**/*.mjs\" \"test/**/*.mjs\"",
+    "test": "npm run build && node --test"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0",
+    "prettier": "3.9.10"
+  }
+}
